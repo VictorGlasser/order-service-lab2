@@ -7,7 +7,7 @@ const app = express();  // Create an Express application instance.
 app.use(express.json());  // Middleware to parse incoming JSON request bodies.
 
 // Enable CORS (Cross-Origin Resource Sharing) for all routes
-// This allows your API to accept requests from different origins (e.g., your frontend).
+// This allows your API to accept requests from different origins (e.g., your frontend) .
 app.use(cors());
 
 // URL for connecting to RabbitMQ (localhost means it's running locally).
