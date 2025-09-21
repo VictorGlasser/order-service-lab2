@@ -1,4 +1,4 @@
-// Import required modules
+// Import required modules #########
 const express = require('express');  // Express is a minimal Node.js framework for building web applications.
 const amqp = require('amqplib/callback_api');  // AMQP (Advanced Message Queuing Protocol) client library for communicating with RabbitMQ.
 const cors = require('cors');  // CORS (Cross-Origin Resource Sharing) middleware for handling cross-origin requests.
