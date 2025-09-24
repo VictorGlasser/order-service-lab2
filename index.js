@@ -49,7 +49,7 @@ app.post('/orders', (req, res) => {
     });
   });
 });
-
+ 
 // Start the server using the port from environment variables
 app.listen(PORT, () => {
   console.log(`Order service is running on http://localhost:${PORT}`);
