@@ -14,7 +14,7 @@ app.use(cors());
 const RABBITMQ_CONNECTION_STRING = process.env.RABBITMQ_CONNECTION_STRING || 'amqp://localhost';  // Fallback to localhost if not defined
 const PORT = process.env.PORT || 3000;  // Fallback to port 3000 if not defined
 
-// Define a POST route for creating orders 
+// Define a POST route for creating orders
 app.post('/orders', (req, res) => {
   const order = req.body; // Extract the order data from the request body.
   
@@ -49,7 +49,7 @@ app.post('/orders', (req, res) => {
     });
   });
 });
- 
+
 // Start the server using the port from environment variables
 app.listen(PORT, () => {
   console.log(`Order service is running on http://localhost:${PORT}`);
